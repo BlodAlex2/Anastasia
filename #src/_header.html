@@ -1,0 +1,26 @@
+<header class="header @@if(logo==0){header--nologo}">
+	<div class="container">
+		<div class="header__content">
+			<div class="header__row @@if(logo==0){header__row--right}">
+				<a class="header__logo ibg @@if(logo==0){header__logo--none}" href="#">
+					<img class="header__img" src="img/header/logo-2.png" alt="logo" />
+				</a>
+				<div class="header__menu menu">
+					<div class="menu__icon icon-menu @@if(logo==0){icon-menu--nologo}">
+						<span></span>
+						<span></span>
+						<span></span>
+					</div>
+					<nav class="menu__body">
+						<ul class="menu__list">
+							<li><a class="menu__link @@if(link==0){menu__link--active}" href="#">Обо мне</a></li>
+							<li><a class="menu__link @@if(link==1){menu__link--active}" href="#">Мои услуги</a></li>
+							<li><a class="menu__link @@if(link==2){menu__link--active}" href="#">Обучение астрологии</a></li>
+							<li><a class="menu__link @@if(link==3){menu__link--active}" href="#">Марафоны</a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</div>
+	</div>
+</header>

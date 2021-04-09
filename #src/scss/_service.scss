@@ -1,0 +1,207 @@
+//=================
+.page-service {
+   background-color: #fbf5f5;
+}
+.service-body {
+   padding: 105px 10px 100px 70px;
+   position: relative;
+   @media (max-width: $md1+px) {
+      padding: 105px 10px 260px 10px;
+   }
+   @media (max-width: $md2+px) {
+      padding: 105px 10px 400px 10px;
+   }
+   @media (max-width: $md3+px) {
+      padding: 28px 10px 300px 10px;
+   }
+   @media (max-width: $md4+px) {
+      padding: 28px 2px 290px 10px;
+   }
+   &::before {
+      content: "";
+      position: absolute;
+      top: 0px;
+      left: 60px;
+      min-height: 840px;
+      height: calc(100% + 60px);
+      width: calc(100vw - 60px);
+      z-index: 0;
+      background-color: #b59797;
+      //url("../img/service-card/1.jpg") 100% 110% / 803px 1147px no-repeat
+      @media (max-width: $md1+px) {
+         top: 0px;
+         left: 8px;
+         width: calc(100vw - 8px);
+      }
+   }
+   &__top {
+      position: relative;
+      z-index: 2;
+   }
+
+   &__title {
+      color: #ffffff;
+      margin: 0px 0px 65px 0px;
+      @media (max-width: $md3+px) {
+         margin: 0px 0px 40px 15px;
+      }
+   }
+
+   &__row {
+      position: relative;
+      z-index: 2;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      @media (max-width: 1240px) {
+         justify-content: center;
+      }
+      margin: 0px -20px;
+   }
+
+   &__item {
+      margin: 0px 20px 40px 20px;
+   }
+   &__bottom {
+      position: relative;
+      width: 100%;
+      display: flex;
+      justify-content: flex-end;
+      align-items: flex-end;
+   }
+   &__background {
+      position: absolute;
+      width: 803px;
+      height: 1147px;
+      right: -10px;
+      bottom: -210px;
+      @media (max-width: $md1+px) {
+         width: 693px;
+         height: 990px;
+         bottom: -380px;
+      }
+      @media (max-width: $md2+px) {
+         width: 553px;
+         height: 790px;
+         bottom: -380px;
+      }
+      @media (max-width: $md3+px) {
+         width: 430px;
+         height: 613px;
+         bottom: -280px;
+      }
+      @media (max-width: $md4+px) {
+         right: -140px;
+      }
+   }
+}
+.item-service {
+   flex: 0 0 360px;
+   height: 260px;
+   background: #fbf5f5;
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-end;
+   align-items: center;
+   text-align: center;
+   padding: 15px 37px 50px 37px;
+   @media (max-width: $md4+px) {
+      flex: 0 1 360px;
+      padding: 15px 10px 50px 10px;
+   }
+   &__title {
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 24px;
+      margin: 0px 0px 14px 0px;
+   }
+
+   &__price {
+      margin: 0px 0px 15px 0px;
+   }
+
+   &__price-num {
+   }
+
+   &__link {
+      margin: 0px 0px 10px 0px;
+   }
+
+   &__more {
+      color: inherit;
+      position: relative;
+      &:hover {
+         &::before {
+            display: none;
+         }
+      }
+      &::before {
+         content: "";
+         position: absolute;
+         bottom: 0px;
+         left: 0;
+         right: 0;
+         width: 100%;
+         height: 1px;
+         background-color: #000;
+      }
+   }
+}
+//=================
+.service-spollers {
+   padding: 181px 0px 181px 0px;
+   @media (max-width: $md3+px) {
+      padding: 100px 0px 78px 0px;
+   }
+   &__top {
+   }
+
+   &__title {
+      margin: 0px 0px 50px 0px;
+   }
+
+   &__body {
+      margin: 0px 0px 50px 0px;
+   }
+
+   &__bottom {
+      display: flex;
+      justify-content: space-between;
+      @media (max-width: $md3+px) {
+         flex-direction: column;
+         align-items: center;
+      }
+   }
+
+   &__link {
+      @media (max-width: $md3+px) {
+         margin: 0px 0px 20px 0px;
+      }
+   }
+}
+//=================
+.service-links {
+   background-color: #b59797;
+   padding: 160px 0px;
+   @media (max-width: $md1+px) {
+      padding: 80px 0px;
+   }
+   &__row {
+      display: flex;
+      flex-direction: row;
+      @media (max-width: $md1+px) {
+         flex-direction: column;
+         align-items: center;
+      }
+   }
+
+   &__item {
+      margin: 0px 40px 20px 0px;
+      @media (max-width: $md1+px) {
+         margin: 0px 0px 20px 0px;
+      }
+      &:last-child {
+         margin: 0px 0px 0px 0px;
+      }
+   }
+}
