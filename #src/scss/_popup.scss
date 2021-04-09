@@ -1,4 +1,3 @@
-//====================================================================================================
 .popup {
 	-webkit-overflow-scrolling: touch;
 	background-color: rgba(0, 0, 0, 0.8);
@@ -10,6 +9,8 @@
 	height: 100%;
 	overflow: auto;
 	z-index: 100;
+	position: relative;
+	line-height: 1.55;
 	&.active {
 		.popup-content {
 			@include scale(1);
@@ -21,6 +22,28 @@
 			@include scale(1);
 		}
 	}
+	&__title {
+		font-size: 25px;
+		font-weight: 600;
+		margin: 0px 0px 20px 0px;
+		@media (max-width: $md4+px) {
+			line-height: 1.17;
+			margin: 0px 0px 15px 0px;
+		}
+	}
+	&__list {
+		margin: 0px 0px 40px 0px;
+		@media (max-width: $md4+px) {
+			margin: 0px 0px 25px 0px;
+		}
+	}
+
+	&__paragraph {
+		margin: 0px 0px 30px 0px;
+		@media (max-width: $md4+px) {
+			margin: 0px 0px 20px 0px;
+		}
+	}
 }
 .popup-table {
 	height: 100%;
@@ -28,37 +51,54 @@
 	> .cell {
 		height: 100%;
 		vertical-align: middle;
-		padding: 30px 10px;
+		padding: 60px 10px;
 	}
 }
 .popup-content {
 	@include scale(0);
 	@include anim(0.3s, 0s);
 	position: relative;
-	max-width: 1230px;
+	max-width: 560px;
 	margin: 0px auto;
-	background-color: #fff;
-}
-.popup-close {
-	width: 15px;
-	height: 15px;
-	position: absolute;
-	top: 0px;
-	right: 0px;
-	cursor: pointer;
-	background: url("../img/icons/close.png") 0 0 no-repeat;
-}
-.popup-video {
-	.popup-close {
-		width: 40px;
-		height: 40px;
-		background-color: #000;
-		top: 0;
-		right: 0;
+	background-color: #fbf5f5;
+	padding: 40px 45px;
+	font-family: "Cormorant";
+	color: #3c2a2a;
+	font-size: 18px;
+	@media (max-width: $md4+px) {
+		max-width: 93%;
+		padding: 20px;
 	}
 }
-.popup-video__value {
+.popup-close {
+	width: 23px;
+	height: 23px;
+	position: fixed;
+	z-index: 1000;
+	top: 20px;
+	right: 20px;
+	cursor: pointer;
 }
+.list-popup {
+	padding: 0px 0px 0px 22px;
+	&__element {
+		list-style: disc;
+	}
+}
+.footer-popup {
+	&__text-top {
+		display: inline-block;
+		&::before {
+			content: "*";
+			margin: 0px 3px 0px 0px;
+		}
+	}
 
-//====================================================================================================
-//====================================================================================================
+	&__text-bottom {
+		display: inline-block;
+		&::before {
+			content: "**";
+			margin: 0px 3px 0px 0px;
+		}
+	}
+}

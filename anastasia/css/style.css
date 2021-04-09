@@ -994,6 +994,8 @@ body.ie .ibg img {
   height: 100%;
   overflow: auto;
   z-index: 100;
+  position: relative;
+  line-height: 1.55;
 }
 
 .popup.active .popup-content {
@@ -1012,6 +1014,20 @@ body.ie .ibg img {
   transform: scale(1);
 }
 
+.popup__title {
+  font-size: 25px;
+  font-weight: 600;
+  margin: 0px 0px 20px 0px;
+}
+
+.popup__list {
+  margin: 0px 0px 40px 0px;
+}
+
+.popup__paragraph {
+  margin: 0px 0px 30px 0px;
+}
+
 .popup-table {
   height: 100%;
   table-layout: fixed;
@@ -1020,7 +1036,7 @@ body.ie .ibg img {
 .popup-table > .cell {
   height: 100%;
   vertical-align: middle;
-  padding: 30px 10px;
+  padding: 60px 10px;
 }
 
 .popup-content {
@@ -1031,29 +1047,49 @@ body.ie .ibg img {
   -o-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
   position: relative;
-  max-width: 1230px;
+  max-width: 560px;
   margin: 0px auto;
-  background-color: #fff;
+  background-color: #fbf5f5;
+  padding: 40px 45px;
+  font-family: "Cormorant";
+  color: #3c2a2a;
+  font-size: 18px;
 }
 
-.no-webp .popup-close{
-  background: url("../img/icons/close.png") 0 0 no-repeat; }
-
 .popup-close {
-  width: 15px;
-  height: 15px;
-  position: absolute;
-  top: 0px;
-  right: 0px;
+  width: 23px;
+  height: 23px;
+  position: fixed;
+  z-index: 1000;
+  top: 20px;
+  right: 20px;
   cursor: pointer;
 }
 
-.popup-video .popup-close {
-  width: 40px;
-  height: 40px;
-  background-color: #000;
-  top: 0;
-  right: 0;
+.list-popup {
+  padding: 0px 0px 0px 22px;
+}
+
+.list-popup__element {
+  list-style: disc;
+}
+
+.footer-popup__text-top {
+  display: inline-block;
+}
+
+.footer-popup__text-top::before {
+  content: "*";
+  margin: 0px 3px 0px 0px;
+}
+
+.footer-popup__text-bottom {
+  display: inline-block;
+}
+
+.footer-popup__text-bottom::before {
+  content: "**";
+  margin: 0px 3px 0px 0px;
 }
 
 .icon-menu {
@@ -1923,6 +1959,24 @@ body.ie .ibg img {
     font-size: 18px;
   }
 
+  .popup__title {
+    line-height: 1.17;
+    margin: 0px 0px 15px 0px;
+  }
+
+  .popup__list {
+    margin: 0px 0px 25px 0px;
+  }
+
+  .popup__paragraph {
+    margin: 0px 0px 20px 0px;
+  }
+
+  .popup-content {
+    max-width: 93%;
+    padding: 20px;
+  }
+
   .about {
     padding: 20px 10px 0px 13px;
   }
@@ -1952,5 +2006,3 @@ body.ie .ibg img {
 .webp .check.active:before{ background: url(../img/icons/check.webp) center no-repeat; }
 
 .webp .option.active:before{ background: url(../img/icons/option.webp) center no-repeat; }
-
-.webp .popup-close{ background: url(../img/icons/close.webp) 0 0 no-repeat; }
