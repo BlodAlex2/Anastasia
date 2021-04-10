@@ -1525,6 +1525,349 @@ body.ie .ibg img {
   margin: 0px 0px 0px 0px;
 }
 
+.about-training {
+  color: #504949;
+  padding: 50px 0px 120px 0px;
+}
+
+.about-training__subtitle {
+  margin: 0px 0px 25px 105px;
+}
+
+.about-training__title {
+  margin: 0px 0px 40px 0px;
+}
+
+.about-training__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+  margin: 0px -20px;
+}
+
+.about-training__description {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 50%;
+          flex: 0 1 50%;
+  margin: 0px 20px;
+}
+
+.about-training__text {
+  margin: 0px 0px 20px 0px;
+}
+
+.about-training__numbers {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 0px 0px 30px 0px;
+}
+
+.about-training__blocks,
+.about-training__month,
+.about-training__lections {
+  max-width: 200px;
+}
+
+.about-training__clarification {
+  max-width: 160px;
+  margin: 0px 40px 0px 0px;
+}
+
+.about-training__title-list {
+  font-weight: 700;
+  font-size: 40px;
+  margin: 0px 0px 17px 0px;
+}
+
+.about-training__list {
+  list-style-type: none;
+  counter-reset: my-counter;
+}
+
+.about-training__elements {
+  padding: 0px 0px 0px 40px;
+  position: relative;
+  color: #504949;
+  line-height: 150%;
+  margin: 0px 0px 10px 0px;
+}
+
+.about-training__elements::before {
+  content: counter(my-counter);
+  counter-increment: my-counter;
+  position: absolute;
+  top: 0;
+  left: 0px;
+  font-size: 50px;
+}
+
+.about-training__photo {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 50%;
+          flex: 0 1 50%;
+  min-height: 100%;
+  margin: 0px 20px;
+}
+
+.spollers-training {
+  background-color: #b59797;
+  padding: 116px 0px 160px 0px;
+  color: #fff;
+}
+
+.spollers-training__top {
+  margin: 0px 0px 27px 0px;
+}
+
+.spollers-training__title {
+  line-height: 97px;
+}
+
+.spollers-training .spollers__item {
+  border-bottom: 1px solid #fff;
+}
+
+.spollers-training .spollers__item:first-child {
+  border-top: 1px solid #fff;
+}
+
+.spollers-training .spollers__span {
+  background-color: #fff;
+}
+
+.spollers-training .spollers__list {
+  padding: 0px 0px 0px 25px;
+  font-size: 18px;
+}
+
+.tarif-training {
+  color: #504949;
+  padding: 117px 0px 96px 0px;
+}
+
+.tarif-training__top {
+  margin: 0px 0px 27px 0px;
+}
+
+.tarif-training__title {
+  line-height: 97px;
+}
+
+.tarif-training__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin: 0px -20px;
+}
+
+.tarif-training__item {
+  margin: 0px 20px;
+}
+
+.tarif-training__bottom {
+  margin: 62px 0px 0px 0px;
+}
+
+.tarif-training__bottom-link {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.tarif-training__link-file {
+  color: inherit;
+  display: inline-block;
+  position: relative;
+}
+
+.tarif-training__link-file:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  width: 100%;
+  height: 1px;
+  background-color: #3c2a2a;
+  -webkit-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+.tarif-training__link-file:hover:after {
+  left: 50%;
+  width: 0%;
+}
+
+.card-tarif {
+  background: #b59797;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 50%;
+          flex: 0 1 50%;
+  padding: 40px 30px 54px;
+  color: #ffffff;
+  line-height: 150%;
+  position: relative;
+}
+
+.card-tarif__subtitle {
+  font-weight: 700;
+  font-size: 20px;
+  margin: 0px 0px 10px 0px;
+}
+
+.card-tarif__list {
+  margin: 0px 0px 16px 0px;
+}
+
+.card-tarif__item {
+  padding: 0px 0px 0px 28px;
+  position: relative;
+}
+
+.card-tarif__item::before {
+  content: "";
+  width: 20px;
+  height: 1px;
+  position: absolute;
+  background-color: #fff;
+  top: 15px;
+  left: 0;
+}
+
+.card-tarif__item--line-through {
+  text-decoration: line-through;
+}
+
+.card-tarif__price {
+  font-weight: 700;
+}
+
+.card-tarif__link {
+  position: absolute;
+  right: 30px;
+  bottom: -27.5px;
+  color: #504949;
+  padding: 0px 0px 0px 0px;
+}
+
+.after-course {
+  padding: 0px 0px 100px 0px;
+  position: relative;
+  z-index: 1;
+}
+
+.after-course__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin: 0 -20px;
+}
+
+.after-course__item {
+  position: relative;
+  margin: 0 20px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 50%;
+          flex: 0 0 50%;
+}
+
+.after-course__photo {
+  max-width: 670px;
+  height: 925px;
+  left: -25%;
+}
+
+.after-course__list {
+  counter-reset: counters;
+  list-style-type: none;
+}
+
+.after-course__elements {
+  padding: 0px 0px 0px 40px;
+  position: relative;
+  color: #504949;
+  line-height: 150%;
+  margin: 0px 0px 10px 0px;
+}
+
+.after-course__elements::before {
+  content: counter(counters);
+  counter-increment: counters;
+  position: absolute;
+  top: 0;
+  left: 0px;
+  font-size: 50px;
+}
+
+.page-training {
+  position: relative;
+}
+
+.training-links {
+  width: 100%;
+  position: absolute;
+  right: 0;
+  left: 0;
+  bottom: 0px;
+  z-index: 0;
+  padding: 160px 0px 160px 0px;
+  background-color: #b59797;
+}
+
+.training-links__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  position: relative;
+  z-index: 10;
+}
+
+.training-links__right,
+.training-links__left {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 50%;
+          flex: 0 0 50%;
+}
+
+.training-links__left {
+  padding: 0px 0px 0px 20px;
+}
+
+.training-links__item {
+  margin: 0px 0px 20px 0px;
+  width: 100% !important;
+}
+
+.training-links__item:last-child {
+  margin: 0px 0px 0px 0px;
+}
+
+.training-links__item .link-items__body {
+  padding: 0px 30px;
+}
+
 .page {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 auto;
@@ -1948,6 +2291,87 @@ body.ie .ibg img {
   .service-spollers__link {
     margin: 0px 0px 20px 0px;
   }
+
+  .about-training__subtitle {
+    margin: 0px 0px 25px 0px;
+  }
+
+  .about-training__body {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
+
+  .about-training__photo {
+    margin: 45px 20px 0px 10px;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 600px;
+            flex: 0 1 600px;
+    width: 450px;
+  }
+
+  .spollers-training {
+    padding: 60px 0px 80px 0px;
+  }
+
+  .spollers-training__title {
+    font-size: 40px;
+    line-height: 48px;
+  }
+
+  .tarif-training {
+    padding: 65px 0px 60px 0px;
+  }
+
+  .tarif-training__top {
+    margin: 0px 0px 40px 0px;
+  }
+
+  .tarif-training__title {
+    font-size: 40px;
+    line-height: 48px;
+  }
+
+  .tarif-training__body {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 0px 0px;
+  }
+
+  .tarif-training__item {
+    margin: 0px 0px 70px 0px;
+  }
+
+  .tarif-training__bottom {
+    margin: 0px 0px 0px 0px;
+  }
+
+  .card-tarif {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 100%;
+            flex: 0 1 100%;
+  }
+
+  .training-links {
+    padding: 80px 0px 80px 0px;
+  }
+
+  .training-links__row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .training-links__left {
+    padding: 0px 0px 0px 0px;
+  }
 }
 
 @media (max-width: 479.98px) {
@@ -2000,6 +2424,62 @@ body.ie .ibg img {
         -ms-flex: 0 1 360px;
             flex: 0 1 360px;
     padding: 15px 10px 50px 10px;
+  }
+
+  .about-training {
+    padding: 10px 0px 74px 0px;
+  }
+
+  .about-training__top {
+    padding: 0px 20px;
+  }
+
+  .about-training__subtitle {
+    margin: 0px 0px 4px 0px;
+  }
+
+  .about-training__title {
+    margin: 0px 0px 10px 0px;
+  }
+
+  .about-training__description {
+    padding: 0px 20px;
+  }
+
+  .about-training__text {
+    margin: 0px 0px 14px 0px;
+  }
+
+  .about-training__title-list {
+    font-size: 30px;
+    line-height: 110%;
+  }
+
+  .about-training__elements::before {
+    font-size: 40px;
+  }
+
+  .about-training__photo {
+    width: 300px;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 400px;
+            flex: 0 1 400px;
+  }
+
+  .tarif-training__link-file {
+    text-decoration: underline;
+  }
+
+  .tarif-training__link-file:after {
+    display: none;
+  }
+
+  .card-tarif {
+    padding: 27px 20px 50px;
+  }
+
+  .after-course__elements::before {
+    font-size: 40px;
   }
 }
 
