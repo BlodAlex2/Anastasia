@@ -2,7 +2,7 @@
 	<div class="container">
 		<div class="header__content">
 			<div class="header__row @@if(logo==0){header__row--right}">
-				<a class="header__logo ibg @@if(logo==0){header__logo--none}" href="#">
+				<a class="header__logo ibg @@if(logo==0){header__logo--none}" href="index.html">
 					<img class="header__img" src="img/header/logo-2.png" alt="logo" />
 				</a>
 				<div class="header__menu menu">
@@ -11,12 +11,13 @@
 						<span></span>
 						<span></span>
 					</div>
-					<nav class="menu__body">
-						<ul class="menu__list">
-							<li><a class="menu__link @@if(link==0){menu__link--active}" href="#">Обо мне</a></li>
-							<li><a class="menu__link @@if(link==1){menu__link--active}" href="#">Мои услуги</a></li>
-							<li><a class="menu__link @@if(link==2){menu__link--active}" href="#">Обучение астрологии</a></li>
-							<li><a class="menu__link @@if(link==3){menu__link--active}" href="#">Марафоны</a></li>
+					<nav class="menu__body @@if(link==3){menu__body--color}">
+						<ul class="menu__list @@if(link==3){menu__list--color}">
+							<li><a class="menu__link @@if(link==0){menu__link--active}" href="index.html">Обо мне</a></li>
+							<li><a class="menu__link @@if(link==1){menu__link--active}" href="service.html">Мои услуги</a></li>
+							<li><a class="menu__link @@if(link==2){menu__link--active}" href="training.html">Обучение
+									астрологии</a></li>
+							<li><a class="menu__link @@if(link==3){menu__link--active}" href="marathon.html">Марафоны</a></li>
 						</ul>
 					</nav>
 				</div>

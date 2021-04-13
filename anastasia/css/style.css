@@ -699,6 +699,58 @@ textarea.input {
   line-height: 1.55;
 }
 
+.card-tarif {
+  background: #b59797;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 50%;
+          flex: 0 1 50%;
+  padding: 40px 30px 54px;
+  color: #ffffff;
+  line-height: 150%;
+  position: relative;
+}
+
+.card-tarif__subtitle {
+  font-weight: 700;
+  font-size: 20px;
+  margin: 0px 0px 10px 0px;
+}
+
+.card-tarif__list {
+  margin: 0px 0px 16px 0px;
+}
+
+.card-tarif__item {
+  padding: 0px 0px 0px 28px;
+  position: relative;
+}
+
+.card-tarif__item::before {
+  content: "";
+  width: 20px;
+  height: 1px;
+  position: absolute;
+  background-color: #fff;
+  top: 15px;
+  left: 0;
+}
+
+.card-tarif__item--line-through {
+  text-decoration: line-through;
+}
+
+.card-tarif__price {
+  font-weight: 700;
+}
+
+.card-tarif__link {
+  position: absolute;
+  right: 30px;
+  bottom: -27.5px;
+  color: #504949;
+  padding: 0px 0px 0px 0px;
+}
+
 .row:after {
   display: block;
   content: "";
@@ -1130,6 +1182,15 @@ body.ie .ibg img {
   width: 100%;
 }
 
+.menu .menu__list--color {
+  color: #fff;
+}
+
+.menu .menu__list--color .menu__link:after {
+  content: "";
+  background-color: #fff;
+}
+
 .menu__link--active {
   font-weight: 700;
 }
@@ -1228,6 +1289,8 @@ body.ie .ibg img {
 }
 
 .footer__link {
+  display: block;
+  color: inherit;
   text-decoration: underline;
   cursor: pointer;
   margin: 0px 0px 18px 0px;
@@ -1504,7 +1567,7 @@ body.ie .ibg img {
 
 .service-links {
   background-color: #b59797;
-  padding: 160px 0px;
+  padding: 160px 0px 140px 0px;
 }
 
 .service-links__row {
@@ -1712,60 +1775,8 @@ body.ie .ibg img {
   width: 0%;
 }
 
-.card-tarif {
-  background: #b59797;
-  -webkit-box-flex: 0;
-      -ms-flex: 0 1 50%;
-          flex: 0 1 50%;
-  padding: 40px 30px 54px;
-  color: #ffffff;
-  line-height: 150%;
-  position: relative;
-}
-
-.card-tarif__subtitle {
-  font-weight: 700;
-  font-size: 20px;
-  margin: 0px 0px 10px 0px;
-}
-
-.card-tarif__list {
-  margin: 0px 0px 16px 0px;
-}
-
-.card-tarif__item {
-  padding: 0px 0px 0px 28px;
-  position: relative;
-}
-
-.card-tarif__item::before {
-  content: "";
-  width: 20px;
-  height: 1px;
-  position: absolute;
-  background-color: #fff;
-  top: 15px;
-  left: 0;
-}
-
-.card-tarif__item--line-through {
-  text-decoration: line-through;
-}
-
-.card-tarif__price {
-  font-weight: 700;
-}
-
-.card-tarif__link {
-  position: absolute;
-  right: 30px;
-  bottom: -27.5px;
-  color: #504949;
-  padding: 0px 0px 0px 0px;
-}
-
 .after-course {
-  padding: 0px 0px 100px 0px;
+  padding: 18px 0px 150px 0px;
   position: relative;
   z-index: 1;
 }
@@ -1778,26 +1789,31 @@ body.ie .ibg img {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  margin: 0 -20px;
+  position: relative;
 }
 
 .after-course__item {
   position: relative;
-  margin: 0 20px;
   -webkit-box-flex: 0;
       -ms-flex: 0 0 50%;
           flex: 0 0 50%;
 }
 
-.after-course__photo {
-  max-width: 670px;
-  height: 925px;
-  left: -25%;
+.after-course__item:last-child {
+  padding: 0px 0px 0px 30px;
 }
 
 .after-course__list {
   counter-reset: counters;
   list-style-type: none;
+  margin: 0px 0px 30px 0px;
+}
+
+.after-course__title {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 150%;
+  margin: 0px 0px 22px 0px;
 }
 
 .after-course__elements {
@@ -1817,18 +1833,35 @@ body.ie .ibg img {
   font-size: 50px;
 }
 
-.page-training {
+.after-course__link-featback {
+  font-size: 20px;
+  font-weight: 700;
+  color: inherit;
+  display: inline-block;
   position: relative;
 }
 
-.training-links {
-  width: 100%;
+.after-course__link-featback:after {
+  content: "";
   position: absolute;
-  right: 0;
   left: 0;
-  bottom: 0px;
-  z-index: 0;
+  bottom: -1px;
+  width: 100%;
+  height: 1px;
+  background-color: #3c2a2a;
+  -webkit-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+.after-course__link-featback:hover:after {
+  left: 50%;
+  width: 0%;
+}
+
+.training-links {
   padding: 160px 0px 160px 0px;
+  position: relative;
   background-color: #b59797;
 }
 
@@ -1851,6 +1884,15 @@ body.ie .ibg img {
           flex: 0 0 50%;
 }
 
+.training-links__photo {
+  max-width: 670px;
+  height: 925px;
+  position: absolute;
+  left: -25%;
+  right: 0;
+  bottom: -40px;
+}
+
 .training-links__left {
   padding: 0px 0px 0px 20px;
 }
@@ -1866,6 +1908,213 @@ body.ie .ibg img {
 
 .training-links__item .link-items__body {
   padding: 0px 30px;
+}
+
+.marathon-about {
+  padding: 60px 0px 150px 0px;
+}
+
+.marathon-about__title {
+  color: #ffffff;
+  margin: 0px 0px 50px 0px;
+}
+
+.marathon-about__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin: 0px -20px;
+}
+
+.marathon-about__item {
+  color: #fff;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 33.333%;
+          flex: 0 1 33.333%;
+  margin: 0px 17px;
+  position: relative;
+  padding: 0px 0px 0px 30px;
+  line-height: 1.5;
+}
+
+.marathon-about__item::before {
+  content: "";
+  position: absolute;
+  top: 13px;
+  left: 0;
+  width: 20px;
+  height: 1px;
+  background-color: #fff;
+}
+
+.marathon-body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.marathon-body__left {
+  background-color: #b59797;
+  width: 60px;
+}
+
+.marathon-body__content {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 100%;
+          flex: 1 1 100%;
+  background-color: #fbf6f6;
+  padding: 140px 0px 150px 0px;
+}
+
+.marathon-body__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.marathon-body__col {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 50%;
+          flex: 0 0 50%;
+  counter-reset: counters-item;
+}
+
+.marathon-body__item {
+  margin: 0px 0px 120px 0px;
+  position: relative;
+}
+
+.marathon-body__item::before {
+  content: counter(counters-item);
+  counter-increment: counters-item;
+  position: absolute;
+  top: -50px;
+  left: 0;
+  color: rgba(83, 73, 70, 0.1);
+  font-size: 300px;
+}
+
+.marathon-body__item:last-child {
+  margin: 0px 0px 0px 0px;
+}
+
+.marathon-body__images {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.marathon-body__image-top {
+  width: 528px;
+  height: 671px;
+  position: relative;
+  z-index: 1;
+}
+
+.marathon-body__image-bottom {
+  width: 606px;
+  height: 761px;
+  position: relative;
+  bottom: 50px;
+  right: -20%;
+  z-index: 2;
+}
+
+.marathon-card {
+  padding: 0px 10px 0px 10px;
+}
+
+.marathon-card__title {
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 1.1;
+  margin: 0px 0px 29px 0px;
+}
+
+.marathon-card__text {
+  line-height: 1.5;
+  padding: 0px 0px 0px 40px;
+  margin: 0px 0px 10px 0px;
+}
+
+.marathon-card__text:last-child {
+  margin: 0px 0px 0px 0px;
+}
+
+.marathon-card__links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 30px 0px 0px 0px;
+}
+
+.marathon-card__link {
+  position: relative;
+  color: inherit;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+.marathon-card__link:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  width: 100%;
+  height: 1px;
+  background-color: #3c2a2a;
+  -webkit-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+.marathon-card__link:hover:after {
+  left: 50%;
+  width: 0%;
+}
+
+.marathon-links {
+  padding: 160px 0px 140px 0px;
+}
+
+.marathon-links__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.marathon-links__item {
+  margin: 0px 40px 20px 0px;
+}
+
+.marathon-links__item:last-child {
+  margin: 0px 0px 0px 0px;
 }
 
 .page {
@@ -1958,7 +2207,7 @@ body.ie .ibg img {
   }
 
   .service-links {
-    padding: 80px 0px;
+    padding: 80px 0px 60px 0px;
   }
 
   .service-links__row {
@@ -1972,6 +2221,62 @@ body.ie .ibg img {
   }
 
   .service-links__item {
+    margin: 0px 0px 20px 0px;
+  }
+
+  .after-course__link-featback {
+    text-decoration: underline;
+  }
+
+  .after-course__link-featback:after {
+    display: none;
+  }
+
+  .marathon-body__left {
+    width: 8px;
+  }
+
+  .marathon-body__image-top {
+    width: 400px;
+    height: 500px;
+  }
+
+  .marathon-body__image-bottom {
+    width: 400px;
+    height: 500px;
+    right: 50px;
+  }
+
+  .marathon-card__links {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .marathon-card__link {
+    text-decoration: underline;
+  }
+
+  .marathon-card__link:after {
+    display: none;
+  }
+
+  .marathon-links {
+    padding: 80px 0px 60px 0px;
+  }
+
+  .marathon-links__row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+
+  .marathon-links__item {
     margin: 0px 0px 20px 0px;
   }
 }
@@ -2008,6 +2313,67 @@ body.ie .ibg img {
     height: 790px;
     bottom: -380px;
   }
+
+  .after-course {
+    padding: 0px 0px 575px 0px;
+  }
+
+  .after-course__row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .after-course__item:last-child {
+    padding: 0px 0px 0px 0px;
+  }
+
+  .training-links {
+    padding: 80px 0px 80px 0px;
+  }
+
+  .training-links__row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .training-links__photo {
+    position: absolute;
+    width: 339px;
+    height: 468px;
+    left: 0;
+    bottom: 366px;
+  }
+
+  .training-links__left {
+    padding: 0px 0px 0px 0px;
+  }
+
+  .marathon-about__list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 0px 0px;
+  }
+
+  .marathon-about__item {
+    margin: 0px 0px 14px 0px;
+  }
+
+  .marathon-body__image-top {
+    width: 337px;
+    height: 427px;
+  }
+
+  .marathon-body__image-bottom {
+    width: 337px;
+    height: 427px;
+    right: -50px;
+  }
 }
 
 @media (max-width: 767.98px) {
@@ -2028,6 +2394,12 @@ body.ie .ibg img {
 
   .link-items__body {
     padding: 0px 31px;
+  }
+
+  .card-tarif {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 100%;
+            flex: 0 1 100%;
   }
 
   .icon-menu {
@@ -2134,6 +2506,10 @@ body.ie .ibg img {
 
   .menu__body.active {
     top: 0;
+  }
+
+  .menu__body--color {
+    background-color: #b59797;
   }
 
   .menu__list {
@@ -2352,25 +2728,42 @@ body.ie .ibg img {
     margin: 0px 0px 0px 0px;
   }
 
-  .card-tarif {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 1 100%;
-            flex: 0 1 100%;
+  .training-links__photo {
+    left: -10px;
   }
 
-  .training-links {
-    padding: 80px 0px 80px 0px;
+  .marathon-about {
+    padding: 30px 0px 60px 0px;
   }
 
-  .training-links__row {
+  .marathon-body__content {
+    padding: 80px 0px 30px 0px;
+  }
+
+  .marathon-body__row {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
   }
 
-  .training-links__left {
-    padding: 0px 0px 0px 0px;
+  .marathon-body__item {
+    margin: 0px 0px 50px 0px;
+  }
+
+  .marathon-body__images {
+    margin: 50px 0px 0px 0px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+
+  .marathon-body__image-top {
+    left: -25px;
+  }
+
+  .marathon-body__image-bottom {
+    right: -25px;
   }
 }
 
@@ -2381,6 +2774,10 @@ body.ie .ibg img {
 
   .link-items__text {
     font-size: 18px;
+  }
+
+  .card-tarif {
+    padding: 27px 20px 50px;
   }
 
   .popup__title {
@@ -2474,12 +2871,47 @@ body.ie .ibg img {
     display: none;
   }
 
-  .card-tarif {
-    padding: 27px 20px 50px;
+  .after-course__title {
+    font-size: 30px;
   }
 
   .after-course__elements::before {
     font-size: 40px;
+  }
+
+  .after-course__link-featback {
+    font-size: 18px;
+  }
+
+  .marathon-about {
+    padding: 0px 0px 60px 0px;
+  }
+
+  .marathon-body__image-top {
+    left: -20px;
+    width: 310px;
+  }
+
+  .marathon-body__image-bottom {
+    right: -10px;
+    width: 310px;
+  }
+
+  .marathon-card__title {
+    font-size: 30px;
+    margin: 0px 0px 14px 0px;
+  }
+
+  .marathon-card__text {
+    padding: 0px 0px 0px 0px;
+  }
+
+  .marathon-card__link:first-child {
+    text-align: left;
+  }
+
+  .marathon-card__link:last-child {
+    text-align: right;
   }
 }
 

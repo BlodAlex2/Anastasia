@@ -191,6 +191,7 @@
          margin: 0px 0px 70px 0px;
       }
    }
+
    &__bottom {
       margin: 62px 0px 0px 0px;
       @media (max-width: $md3+px) {
@@ -232,86 +233,46 @@
       }
    }
 }
-.card-tarif {
-   background: #b59797;
-   flex: 0 1 50%;
-   padding: 40px 30px 54px;
-   color: #ffffff;
-   line-height: 150%;
-   position: relative;
-   @media (max-width: $md3+px) {
-      flex: 0 1 100%;
-   }
-   @media (max-width: $md4+px) {
-      padding: 27px 20px 50px;
-   }
-   &__subtitle {
-      font-weight: 700;
-      font-size: 20px;
-      margin: 0px 0px 10px 0px;
-   }
-
-   &__list {
-      margin: 0px 0px 16px 0px;
-   }
-
-   &__item {
-      padding: 0px 0px 0px 28px;
-      position: relative;
-      &::before {
-         content: "";
-         width: 20px;
-         height: 1px;
-         position: absolute;
-         background-color: #fff;
-         top: 15px;
-         left: 0;
-      }
-   }
-
-   &__item--line-through {
-      text-decoration: line-through;
-   }
-
-   &__price {
-      font-weight: 700;
-   }
-
-   &__link {
-      position: absolute;
-      right: 30px;
-      bottom: -27.5px;
-      color: #504949;
-      padding: 0px 0px 0px 0px;
-   }
-}
 
 .after-course {
-   padding: 0px 0px 100px 0px;
+   padding: 18px 0px 150px 0px;
    position: relative;
    z-index: 1;
+   @media (max-width: $md2+px) {
+      padding: 0px 0px 575px 0px;
+   }
    &__row {
       display: flex;
       flex-direction: row;
-      margin: 0 -20px;
+      position: relative;
+      @media (max-width: $md2+px) {
+         flex-direction: column;
+      }
    }
-
    &__item {
       position: relative;
-      margin: 0 20px;
       flex: 0 0 50%;
+      &:last-child {
+         padding: 0px 0px 0px 30px;
+         @media (max-width: $md2+px) {
+            padding: 0px 0px 0px 0px;
+         }
+      }
    }
-   &__photo {
-      max-width: 670px;
-      height: 925px;
-      left: -25%;
-   }
-
    &__list {
       counter-reset: counters;
       list-style-type: none;
+      margin: 0px 0px 30px 0px;
    }
-
+   &__title {
+      font-weight: 700;
+      font-size: 40px;
+      line-height: 150%;
+      margin: 0px 0px 22px 0px;
+      @media (max-width: $md4+px) {
+         font-size: 30px;
+      }
+   }
    &__elements {
       padding: 0px 0px 0px 40px;
       position: relative;
@@ -330,26 +291,51 @@
       }
       margin: 0px 0px 10px 0px;
    }
+   &__link-featback {
+      font-size: 20px;
+      font-weight: 700;
+      color: inherit;
+      display: inline-block;
+      position: relative;
+      &:after {
+         content: "";
+         position: absolute;
+         left: 0;
+         bottom: -1px;
+         width: 100%;
+         height: 1px;
+         background-color: #3c2a2a;
+         @include anim(0.3s, 0s);
+      }
+      &:hover {
+         &:after {
+            left: 50%;
+            width: 0%;
+         }
+      }
+      @media (max-width: $md4+px) {
+         font-size: 18px;
+      }
+      @media (max-width: $md1+px) {
+         &:after {
+            display: none;
+         }
+         text-decoration: underline;
+      }
+   }
 }
-.page-training {
-   position: relative;
-}
+
 .training-links {
-   width: 100%;
-   position: absolute;
-   right: 0;
-   left: 0;
-   bottom: 0px;
-   z-index: 0;
    padding: 160px 0px 160px 0px;
-   @media (max-width: $md3+px) {
+   position: relative;
+   @media (max-width: $md2+px) {
       padding: 80px 0px 80px 0px;
    }
    background-color: #b59797;
    &__row {
       display: flex;
       flex-direction: row;
-      @media (max-width: $md3+px) {
+      @media (max-width: $md2+px) {
          flex-direction: column;
       }
       position: relative;
@@ -360,10 +346,27 @@
    &__left {
       flex: 0 0 50%;
    }
-
+   &__photo {
+      max-width: 670px;
+      height: 925px;
+      position: absolute;
+      left: -25%;
+      right: 0;
+      bottom: -40px;
+      @media (max-width: $md2+px) {
+         position: absolute;
+         width: 339px;
+         height: 468px;
+         left: 0;
+         bottom: 366px;
+      }
+      @media (max-width: $md3+px) {
+         left: -10px;
+      }
+   }
    &__left {
       padding: 0px 0px 0px 20px;
-      @media (max-width: $md3+px) {
+      @media (max-width: $md2+px) {
          padding: 0px 0px 0px 0px;
       }
    }
@@ -377,18 +380,5 @@
       .link-items__body {
          padding: 0px 30px;
       }
-   }
-}
-.link-items {
-   &__body {
-   }
-
-   &__text {
-   }
-
-   &__arrow {
-   }
-
-   &__img {
    }
 }

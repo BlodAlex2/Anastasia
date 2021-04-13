@@ -79,6 +79,9 @@
 			&.active {
 				top: 0;
 			}
+			&--color {
+				background-color: #b59797;
+			}
 		}
 	}
 	&__list {
@@ -118,6 +121,15 @@
 			font-size: 24px;
 			display: block;
 			margin: 0px 0px 30px 20px;
+		}
+	}
+	.menu__list--color {
+		color: #fff;
+		.menu__link {
+			&:after {
+				content: "";
+				background-color: #fff;
+			}
 		}
 	}
 	&__link--active {
